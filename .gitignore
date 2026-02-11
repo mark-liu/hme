@@ -1,0 +1,21 @@
+# Binary
+hme
+hme.exe
+
+# Cookies / secrets
+cookies.txt
+*.cookie*
+.config/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go
+dist/
