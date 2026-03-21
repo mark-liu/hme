@@ -13,8 +13,8 @@ import (
 
 const (
 	defaultBaseURL         = "https://p68-maildomainws.icloud.com"
-	clientBuildNumber      = "2420Hotfix2"
-	clientMasteringNumber  = "2420Hotfix2"
+	clientBuildNumber      = "2608Build39"
+	clientMasteringNumber  = "2608Build39"
 	userAgent              = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"
 )
 
