@@ -27,6 +27,21 @@ archives:
 checksum:
   name_template: checksums.txt
 
+brews:
+  - name: hme
+    repository:
+      owner: mark-liu
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_TOKEN }}"
+    directory: Formula
+    homepage: "https://github.com/mark-liu/hme"
+    description: "iCloud Hide My Email CLI — generate aliases from the command line"
+    license: "MIT"
+    install: |
+      bin.install "hme"
+    test: |
+      assert_match "hme", shell_output("#{bin}/hme --version")
+
 changelog:
   sort: asc
   filters:
