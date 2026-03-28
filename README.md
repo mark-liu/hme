@@ -4,6 +4,12 @@ Generate, reserve, and list iCloud Hide My Email aliases from the command line.
 
 ## Install
 
+### Homebrew
+
+```bash
+brew install mark-liu/tap/hme
+```
+
 ### From release
 
 Download a pre-built binary from [Releases](https://github.com/mark-liu/hme/releases):
