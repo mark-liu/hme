@@ -85,7 +85,7 @@ func (c *Client) doRequest(req *http.Request, out interface{}) error {
 	}
 	defer resp.Body.Close()
 
-	body, err := io.ReadAll(resp.Body)
+	body, err := io.ReadAll(io.LimitReader(resp.Body, 10*1024*1024))
 	if err != nil {
 		return fmt.Errorf("reading response: %w", err)
 	}
